@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "572395282974",
+    "project_id": "mayur-magic-lens",
+    "storage_bucket": "mayur-magic-lens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572395282974:android:5d7976e1e75b3ecb32c40f",
+        "android_client_info": {
+          "package_name": "com.mayur.mayurmagiclens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572395282974-21envpcmpa19asrpdhfoga098cbbhr7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxAdcczAUbOliG-ZlYzQ8DIU7T49u2odY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572395282974-21envpcmpa19asrpdhfoga098cbbhr7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

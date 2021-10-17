@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="7dp"
+    app:cardBackgroundColor="@color/purple_500"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Title"
+           android:textSize="15sp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:padding="4dp"
+           android:fontFamily="@font/aclonica"
+           android:layout_margin="3dp"
+           android:id="@+id/RecTxtViewTitle"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snippet"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:layout_margin="3dp"
+            android:id="@+id/RecTxtViewSnippet"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:lines="3"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:fontFamily="@font/aclonica"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:layout_margin="3dp"
+            android:id="@+id/RecTxtViewDes"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
