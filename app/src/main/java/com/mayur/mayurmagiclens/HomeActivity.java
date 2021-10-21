@@ -30,6 +30,7 @@ import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -81,11 +82,12 @@ public class HomeActivity extends AppCompatActivity {
 
     private void getRes() {
         FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(bitmap);
-        FirebaseVisionImageLabeler labeler = FirebaseVision.getInstance().getCloudImageLabeler();
+        FirebaseVisionImageLabeler labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler();
         labeler.processImage(image).addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionImageLabel>>() {
             @Override
             public void onSuccess(List<FirebaseVisionImageLabel> firebaseVisionImageLabels) {
                 String srchQry = firebaseVisionImageLabels.get(0).getText();
+                Toast.makeText(HomeActivity.this, "" + srchQry, Toast.LENGTH_SHORT).show();
                 getSearchResults(srchQry);
             }
         }).addOnFailureListener(new OnFailureListener() {
